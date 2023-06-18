@@ -11,9 +11,9 @@ namespace LineComparision
         static void Main(string[] args)
         {
            
-            LengthOfLine lengthofline = new LengthOfLine(5, 4, 6, 3);
+            CheckEquality checkequality = new CheckEquality(5, 4, 6, 3, 4, 3, 6, 5);
 
-            lengthofline.LengthCalculate();
+            checkequality.LengthCalculate();
 
             Console.ReadLine();
         }
