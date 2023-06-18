@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LineComparision
 {
-    public class CheckEquality
+    public class LineCompare
     {
         int x1, x2, y1, y2;
         int x3, x4, y3, y4;
-        public CheckEquality(int x1, int x2, int x3, int x4, int y1, int y2, int y3, int y4)
+        public LineCompare(int x1, int x2, int x3, int x4, int y1, int y2, int y3, int y4)
         {
             this.x1 = x1;
             this.x2 = x2;
@@ -36,14 +36,16 @@ namespace LineComparision
             {
                 Console.WriteLine("Line1 And Line2 is Equal");
             }
+            else if(lengthofaline1 > lengthofaline2)
+            {
+                Console.WriteLine("Line1 is Greater Than Line2");
+            }
             else
             {
-                Console.WriteLine("Line1 And Line2 is Not Equal");
+                Console.WriteLine("Line1 is Less Than Line2");
             }
 
-
         }
-
 
     }
     

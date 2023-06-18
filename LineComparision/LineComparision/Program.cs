@@ -11,9 +11,9 @@ namespace LineComparision
         static void Main(string[] args)
         {
            
-            CheckEquality checkequality = new CheckEquality(5, 4, 6, 3, 4, 3, 6, 5);
+            LineCompare linecompare = new LineCompare(5, 4, 6, 7, 4, 3, 6, 5);
 
-            checkequality.LengthCalculate();
+            linecompare.LengthCalculate();
 
             Console.ReadLine();
         }
